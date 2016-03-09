@@ -1,59 +1,151 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Jessael Reyes</title>
-    </head>
-    <style>
-        body{
-           background-color:rgb(0, 0, 255);
-        }
-        #main{
-             border: 10px outset white;
-        }
-        a{
-            color:yellow;
-        }
-      h1{
-          text-align:center;
-          font-family:courier;
-          border:double red 10px;
-          color:yellow;
-      }
-      #navebar{
-          color:white;
-      }
-      h2{
-          color:red;
-      }
-     p{
-         color:yellow;
-     }
-        
-    </style>
-    <body>
-    <h1><em>Jessael Reyes</em></h1>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Jessael Reyes Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:Blue;
+    }
     
-    <div id="navebar">
-    <ol>
-    <li><a href="#aboutme">Home</a></li>
-    <li><a href="./portfolio.html">Portfolio</a></li>
-    <li><a href="#interest">Interest</a></li>
-    </ol>
-        
-        
-    </div>
-    
-    
-    <div id="main">
-        <img id="blank" src="https://www.kasandbox.org/programming-images/landscapes/beach.png" width="603">
-        <h2>Alpha: Cindy Avitia High School</h2>
-        <p>I'm a founding ninth grader at Alpha Cindy Avitia High School.This school has many benefits to get a higher education. Having an education is really important to be successful in life.</p>
-        <img src="https://www.kasandbox.org/programming-images/food/fish_grilled-snapper.png" width="603">
-        <h2>Food</h2>
-        <p>In the world there are many diffrent kinds of food that are very good. For example in America many people like pizza. In Mexico people like tacos. Food keeps us energized to have a good day.</p>
-        
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: Red;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:yellow;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: yellow;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("http://storage2-ihigh.blueframetech.com/users/2180/photos/2574434.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
     </div>
 
-    </body>
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Jessael's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">Born and raised in San Jose, California. I've played in a football team and like to visit my family.
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">I currently attend Alpha: Cindy Avitia High School. I'm captain of the flag football team.
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
 </html>
